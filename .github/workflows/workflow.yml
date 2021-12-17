@@ -4,9 +4,9 @@ jobs:
   my-job:
     runs-on: ubuntu-latest
     
-    steps:
+  steps:
     -uses: actions/checkout@V2
-     name: run the action
+     name: "run the action"
      id: Hello
      uses: ./
      with:
