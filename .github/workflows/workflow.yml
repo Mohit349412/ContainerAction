@@ -14,4 +14,4 @@ myInput: 'Mohit Singh'
 -name: output
 # run: |
 echo ${{ steps.hello.outputs.memory}}
-# echo "total memory successful output"
+
