@@ -1,17 +1,21 @@
+name: Example Workflow
+
 on: [push]
 
 jobs:
   my-job:
     runs-on: ubuntu-latest
-    
-steps:
-  -uses: actions/checkout@V2
-  -name: "run the action"
-   id: hello
-uses: ./
-with:
-myInput: 'Mohit Singh'
--name: output
-# run: |
-# echo ${{ steps.hello.outputs.memory}}
-# echo "total memory successful output"
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Run the action
+        id: hello
+        uses: ./
+        with:
+          myInput: 'Mohit Singh'
+
+      - name: Output
+        run: |
+          echo ${{ steps.hello.outputs.memory }}
+          echo "total memory successful output"
