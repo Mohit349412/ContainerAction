@@ -2,13 +2,13 @@ name: 'my first container action'
 description: 'A github'
 author: 'Mohit Singh'
 inputs:
- myInput:
-  description: 'greeting to use'
-  required: true
-  default: "Awesome github'
+  myInput:
+    description: 'greeting to use'
+    required: true
+    default: "Awesome github"
 outputs:
- myOutput:
-  description: 'total memory'
+  myOutput:
+    description: 'total memory'
 runs:
- using: 'docker'
- image: 'Dockerfile'
+  using: 'docker'
+  image: 'Dockerfile'
