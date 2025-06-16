@@ -17,5 +17,5 @@ jobs:
 
       - name: Output
         run: |
-          echo ${{ steps.hello.outputs.memory }}
+          echo "Output from custom action: ${{ steps.hello.outputs.myOutput }}"
           echo "total memory successful output"
